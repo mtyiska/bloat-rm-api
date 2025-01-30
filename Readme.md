@@ -6,7 +6,7 @@ A FastAPI service to analyze the size changes ("bloat") of GitHub repository rel
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/github-bloat-analyzer.git
+git clone https://github.com/mtyiska/bloat-rm-api.git
 cd github-bloat-analyzer
 ```
 
