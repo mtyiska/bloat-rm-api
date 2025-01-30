@@ -1,0 +1,29 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Ignore virtual environment
+venv/
+.env
+*.env
+*.venv
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE & editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore test files
+tests/
+*.pytest_cache/
+.coverage
+htmlcov/
+
