@@ -68,8 +68,3 @@ Visit **http://127.0.0.1:8000/docs** for interactive API documentation.
 │── .env                         # Environment variables (not committed)
 │── README.md                    # Project documentation
 ```
-
-# bloat-api
-# bloat-api
-# bloat-rm-api
-# bloat-rm-api
