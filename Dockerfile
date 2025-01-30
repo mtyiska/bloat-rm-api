@@ -4,11 +4,17 @@ FROM python:3.10
 # Set working directory
 WORKDIR /app
 
-# Copy project files
-COPY . /app
+# Copy only requirements first for efficient caching
+COPY requirements.txt /app/
 
 # Install dependencies
-RUN pip install --no-cache-dir fastapi uvicorn requests semantic_version
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application files
+COPY . /app
+
+# Ensure .env file is copied
+COPY .env /app/.env
 
 # Expose FastAPI's default port
 EXPOSE 8000
